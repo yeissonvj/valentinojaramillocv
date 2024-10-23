@@ -1,0 +1,137 @@
+{
+    "title": "Valentino Jaramillo - Portafolio",
+    "logo": "Valentino Jaramillo",
+    "nav-home": "Inicio",
+    "nav-about": "Acerca de mí",
+    "nav-experience": "Experiencia",
+
+    "skills-advanced-development": "Desarrollo avanzado de software",
+    "skills-problem-solving": "Resolución de problemas",
+    "skills-collaboration": "Colaboración y comunicación",
+    "skills-project-management": "Gestión de proyectos",
+    "skills-continuous-improvement": "Mejora continua",
+
+    "skills-title": "Habilidades",
+    "skills-1-title": "Desarrollo de Software",
+    "skills-1-description": "Experiencia avanzada en C#, Python, y JavaScript para crear aplicaciones eficientes y escalables.",
+    "skills-2-title": "Bases de Datos",
+    "skills-2-description": "Profundo conocimiento en SQL, PostgreSQL, y Oracle para el manejo de grandes volúmenes de datos.",
+    "skills-3-title": "Desarrollo de APIs",
+    "skills-3-description": "Diseño y desarrollo de APIs RESTful con OpenAPI/Swagger para integración eficiente.",
+    "skills-4-title": "DevOps",
+    "skills-4-description": "Implementación de CI/CD y automatización de procesos con herramientas como Jenkins y Docker.",
+    "skills-5-title": "Seguridad",
+    "skills-5-description": "Conocimiento en prácticas de seguridad web, prevención de vulnerabilidades y protección de datos.",
+    "skills-6-title": "Metodologías Ágiles",
+    "skills-6-description": "Experiencia en la gestión de proyectos con metodologías ágiles como Scrum y Kanban.",
+
+
+    "nav-projects": "Proyectos",
+    "nav-contact": "Contacto",
+    "hero-title": "¡Hola! Soy Valentino Jaramillo",
+    "hero-text": "Ingeniero de Software con más de 12 años de experiencia en el desarrollo de soluciones innovadoras y escalables.",
+    "about-title": "Acerca de mí",
+    "about-text": "Soy un desarrollador de software apasionado por la excelencia técnica, la resolución eficiente de problemas y mejora continua. Me enfoco en el liderazgo técnico y entrega de soluciones de alta calidad. Mi compromiso es innovar y mejorar constantemente, buscando siempre estar al tanto de las últimas tendencias tecnológicas.",
+    
+
+    "experience-title": "Experiencia Profesional",
+    "experience-item1-title": "Architect and Technical Lead – Technolo-GIS",
+    "experience-item1-date": "2022 - Actualidad",
+    "experience-item1-description": "Integración y exposición de APIs Web, análisis espacial y geoprocesamiento. Seguridad de aplicaciones y aseguramiento de calidad de software.",
+    "experience-item1-tasks": [
+        "Implementar capacidades de liderazgo que permitan la planeación, ejecución y control exitosos de proyectos de software.",
+        "Diseño arquitectónico.",
+        "Mentoría y capacitación.",
+        "Resolución de problemas críticos.",
+        "Liderazgo técnico.",
+        "Aseguramiento de calidad de código.",
+        "Seguridad en el desarrollo de aplicaciones.",
+        "Desarrollo de bases de nuevas funcionalidades.",
+        "Marcos ágiles: Scrum.",
+        "DevOps entrega continua."
+    ],
+    
+    "experience-item2-title": "Senior Developer, GIS Consultant – Esri Colombia",
+    "experience-item2-date": "2017 – 2022",
+    "experience-item2-description": "Diseño arquitectónico, aseguramiento de calidad de código, liderazgo técnico. Entrega continua de DevOps, resolución de problemas críticos.",
+    "experience-item2-tasks": [
+        "Integración y exposición de APIs Web, análisis espacial y geoprocesamiento.",
+        "Aplicar sólidos conocimientos de desarrollo de software, resolviendo problemas efectivamente en las diferentes aplicaciones de la empresa.",
+        "Resolución de problemas críticos.",
+        "Aseguramiento de calidad del software.",
+        "Seguridad y integración de APIs web.",
+        "Análisis espacial y geoprocesamiento.",
+        "Marcos ágiles: Scrum.",
+        "Integración y exposición de APIs Web.",
+        "DevOps entrega continua."
+    ],
+
+    "experience-item3-title": "Intermediate Developer – INTERGRUPO",
+    "experience-item3-date": "2016 – 2017",
+    "experience-item3-description": "Desarrollo de aplicaciones web y de escritorio, soporte y mantenimiento de aplicaciones.",
+    "experience-item3-tasks": [
+        "Implementar capacidades de liderazgo que permitan la planeación, ejecución y control exitosos de proyectos de software.",
+        "Diseño arquitectónico.",
+        "Mentoría y capacitación.",
+        "Resolución de problemas críticos.",
+        "Liderazgo técnico.",
+        "Aseguramiento de calidad de código.",
+        "Seguridad en el desarrollo de aplicaciones.",
+        "Desarrollo de nuevas funcionalidades.",
+        "Marcos ágiles: Scrum.",
+        "DevOps entrega continua."
+    ],
+
+    "experience-item4-title": "Intermediate Developer – Procalculo Prosis",
+    "experience-item4-date": "2012 - 2016",
+    "experience-item4-description": "Desarrollo y mejora de aplicaciones empresariales enfocadas en el sector energético y geográfico.",
+    "experience-item4-tasks": [
+        "Diseño y planificación de soluciones técnicas en colaboración con el equipo.",
+        "Pruebas automatizadas de software para asegurar cumplimiento de requisitos.",
+        "Mejoras de eficiencia en el rendimiento de aplicaciones.",
+        "Revisión de código entre pares para mejorar la calidad.",
+        "Soporte técnico a usuarios finales y miembros del equipo."
+    ],
+
+    "experience-item5-title": "Junior Developer – Evolutions Services and Consulting",
+    "experience-item5-date": "2011 - 2012",
+    "experience-item5-description": "Implementación de mejoras y nuevas funcionalidades en aplicaciones web.",
+    "experience-item5-tasks": [
+        "Escritura de código y desarrollo de nuevas funcionalidades.",
+        "Corrección de errores y depuración de código.",
+        "Pruebas unitarias y creación de documentación técnica.",
+        "Gestión de versiones de código fuente.",
+        "Optimización de funciones operativas del software."
+    ],
+
+
+
+    "projects-title": "Proyectos",
+    "projects-1-title": "Technolo-GIS",
+    "projects-1-description": "Integración y exposición de APIs Web, análisis espacial y geoprocesamiento.",
+    "projects-1-button": "Ver Proyecto",
+    "projects-2-title": "Esri Colombia",
+    "projects-2-description": "Diseño arquitectónico, aseguramiento de calidad de código, liderazgo técnico.",
+    "projects-2-button": "Ver Proyecto",
+    "projects-3-title": "SoftwareOne",
+    "projects-3-description": "Desarrollo de aplicaciones web y de escritorio, soporte y mantenimiento de aplicaciones.",
+    "projects-3-button": "Ver Proyecto",
+    "projects-4-title": "Procalculo – Prosis",
+    "projects-4-description": "Herramienta de análisis geoespacial interactivo para la visualización de datos del sector energético.",
+    "projects-4-button": "Ver Proyecto",
+    "projects-5-title": "Evolutions csas",
+    "projects-5-description": "Solución de mapeo geográfico con capacidades avanzadas de análisis y visualización.",
+    "projects-5-button": "Ver Proyecto",
+    
+    
+    
+    "contact-title": "Contacto",
+  "contact-text-email": "Puedes contactarme por correo:",
+  "contact-email": "valentinojaramillo77@gmail.com",
+  "contact-text-linkedin": "LinkedIn:",
+  "contact-linkedin": "Valentino Jaramillo",
+  "contact-image-credit": "Foto por",
+  "contact-image-author": "Aleksandar Savić Almigor",
+  
+    "footer": "&copy; 2024 Valentino Jaramillo"
+}

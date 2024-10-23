@@ -1,0 +1,139 @@
+{
+    "title": "Valentino Jaramillo - Portfolio",
+    "logo": "Valentino Jaramillo",
+    "nav-home": "Home",
+    "nav-about": "About",
+    "nav-experience": "Experience",
+
+    "skills-advanced-development": "Advanced software development",
+"skills-problem-solving": "Problem solving",
+"skills-collaboration": "Collaboration and communication",
+"skills-project-management": "Project management",
+"skills-continuous-improvement": "Continuous improvement",
+
+    "skills-title": "Skills",
+  "skills-1-title": "Software Development",
+  "skills-1-description": "Advanced experience in C#, Python, and JavaScript for creating efficient and scalable applications.",
+  "skills-2-title": "Databases",
+  "skills-2-description": "Deep knowledge in SQL, PostgreSQL, and Oracle for handling large volumes of data.",
+  "skills-3-title": "API Development",
+  "skills-3-description": "Design and development of RESTful APIs with OpenAPI/Swagger for efficient integration.",
+  "skills-4-title": "DevOps",
+  "skills-4-description": "Implementation of CI/CD and process automation with tools like Jenkins and Docker.",
+  "skills-5-title": "Security",
+  "skills-5-description": "Knowledge in web security practices, vulnerability prevention, and data protection.",
+  "skills-6-title": "Agile Methodologies",
+  "skills-6-description": "Experience in project management with agile methodologies such as Scrum and Kanban.",
+
+
+
+
+    "nav-projects": "Projects",
+    "nav-contact": "Contact",
+    "hero-title": "Hello! I'm Valentino Jaramillo",
+    "hero-text": "Software Engineer with over 12 years of experience developing innovative and scalable solutions.",
+    "about-title": "About Me",
+    "about-text": "I am a software developer passionate about technical excellence, efficient problem solving, and continuous improvement. I focus on technical leadership and delivering high-quality solutions. I am committed to constant innovation and improvement, always seeking to stay abreast of the latest technological trends.",
+    
+    
+    
+    "experience-title": "Professional Experience",
+  "experience-item1-title": "Architect and Technical Lead – Technolo-GIS",
+  "experience-item1-date": "2022 - Present",
+  "experience-item1-description": "Integration and exposure of Web APIs, spatial analysis, and geoprocessing. Application security and software quality assurance.",
+  "experience-item1-tasks": [
+    "Implement leadership capabilities that enable successful planning, execution, and control of software projects.",
+    "Architectural design.",
+    "Mentoring and training.",
+    "Critical problem-solving.",
+    "Technical leadership.",
+    "Code quality assurance.",
+    "Application security development.",
+    "Developing new functionality foundations.",
+    "Agile frameworks: Scrum.",
+    "Continuous delivery with DevOps."
+  ],
+
+  "experience-item2-title": "Senior Developer, GIS Consultant – Esri Colombia",
+  "experience-item2-date": "2017 – 2022",
+  "experience-item2-description": "Architectural design, code quality assurance, technical leadership. Continuous delivery with DevOps, critical problem-solving.",
+  "experience-item2-tasks": [
+    "Integration and exposure of Web APIs, spatial analysis, and geoprocessing.",
+    "Applying solid software development knowledge to effectively solve problems in the company’s various applications.",
+    "Critical problem-solving.",
+    "Software quality assurance.",
+    "API security and integration.",
+    "Spatial analysis and geoprocessing.",
+    "Agile frameworks: Scrum.",
+    "Web API integration and exposure.",
+    "Continuous delivery with DevOps."
+  ],
+
+  "experience-item3-title": "Intermediate Developer – INTERGRUPO",
+  "experience-item3-date": "2016 – 2017",
+  "experience-item3-description": "Web and desktop application development, support, and maintenance.",
+  "experience-item3-tasks": [
+    "Implement leadership capabilities that enable successful planning, execution, and control of software projects.",
+    "Architectural design.",
+    "Mentoring and training.",
+    "Critical problem-solving.",
+    "Technical leadership.",
+    "Code quality assurance.",
+    "Application security development.",
+    "Developing new functionalities.",
+    "Agile frameworks: Scrum.",
+    "Continuous delivery with DevOps."
+  ],
+
+  "experience-item4-title": "Intermediate Developer – Procalculo Prosis",
+  "experience-item4-date": "2012 - 2016",
+  "experience-item4-description": "Development and enhancement of enterprise applications focused on the energy and geographic sectors.",
+  "experience-item4-tasks": [
+    "Designing and planning technical solutions in collaboration with the team.",
+    "Automated software testing to ensure requirements compliance.",
+    "Performance efficiency improvements.",
+    "Peer code review to improve quality.",
+    "Technical support to end-users and team members."
+  ],
+
+  "experience-item5-title": "Junior Developer – Evolutions Services and Consulting",
+  "experience-item5-date": "2011 - 2012",
+  "experience-item5-description": "Implementing improvements and new functionalities in web applications.",
+  "experience-item5-tasks": [
+    "Writing code and developing new functionalities.",
+    "Bug fixing and code debugging.",
+    "Unit testing and technical documentation creation.",
+    "Source code version management.",
+    "Optimizing software operational functions."
+  ],
+
+
+
+    "projects-title": "Projects",
+  "projects-1-title": "Technolo-GIS",
+  "projects-1-description": "Integration and exposure of Web APIs, spatial analysis, and geoprocessing.",
+  "projects-1-button": "View Project",
+  "projects-2-title": "Esri Colombia",
+  "projects-2-description": "Architectural design, code quality assurance, technical leadership.",
+  "projects-2-button": "View Project",
+  "projects-3-title": "SoftwareOne",
+  "projects-3-description": "Web and desktop application development, support and maintenance.",
+  "projects-3-button": "View Project",
+  "projects-4-title": "Procalculo – Prosis",
+  "projects-4-description": "Interactive geospatial analysis tool for visualizing energy sector data.",
+  "projects-4-button": "View Project",
+  "projects-5-title": "Evolutions csas",
+  "projects-5-description": "Geographic mapping solution with advanced analysis and visualization capabilities.",
+  "projects-5-button": "View Project",
+    
+    
+    "contact-title": "Contact",
+  "contact-text-email": "You can contact me by email:",
+  "contact-email": "valentinojaramillo77@gmail.com",
+  "contact-text-linkedin": "LinkedIn:",
+  "contact-linkedin": "Valentino Jaramillo",
+  "contact-image-credit": "Photo by",
+  "contact-image-author": "Aleksandar Savić Almigor",
+  
+    "footer": "&copy; 2024 Valentino Jaramillo"
+}

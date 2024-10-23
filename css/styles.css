@@ -1,0 +1,856 @@
+/* Estilos Globales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo básico del menú */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: transparent; /* Fondo transparente por defecto */
+    position: fixed; /* Fijo en la parte superior */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333; /* Color oscuro por defecto */
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center; /* Alinear el icono con el texto */
+}
+
+/* Estilo del ícono al lado del nombre */
+.logo i {
+    font-size: 1.5rem; /* Tamaño del ícono */
+    margin-left: 0.5rem; /* Espacio entre el nombre y el ícono */
+    color: #00bcd4; /* Color del ícono */
+    transition: color 0.3s ease;
+}
+
+/* Cambiar el color del ícono al hacer scroll */
+.navbar.scrolled .logo i {
+    color: white; /* Cambiar el color del ícono al hacer scroll */
+}
+
+/* Estilo de los enlaces del menú */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem; /* Espacio entre los elementos del menú */
+}
+
+.nav-links li {
+    position: relative; /* Para usar el pseudo-elemento ::after */
+}
+
+/* Añadir separadores entre los elementos del menú */
+.nav-links li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -1rem; /* Coloca el separador justo después del enlace */
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background-color: rgba(51, 51, 51, 0.5); /* Separador con transparencia */
+}
+
+/* Estilo de los enlaces del menú */
+.nav-links li a {
+    text-decoration: none;
+    color: #333; /* Color oscuro por defecto */
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efecto hover en los enlaces */
+.nav-links li a:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Fondo ligeramente oscuro al hover */
+    border-radius: 5px;
+}
+
+/* Estilo del menú cuando se hace scroll */
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro al hacer scroll */
+}
+
+.navbar.scrolled .logo, .navbar.scrolled .nav-links li a {
+    color: white; /* Cambia los enlaces y el logo a blanco */
+}
+
+.navbar.scrolled .nav-links li:not(:last-child)::after {
+    background-color: rgba(255, 255, 255, 0.5); /* Cambia el color de los separadores a blanco */
+}
+
+/* Estilo del menú responsive (hamburguesa) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger i {
+    font-size: 1.8rem;
+    color: #333; /* Color oscuro por defecto */
+    transition: color 0.3s ease;
+}
+
+/* Estilo de los iconos y enlaces al hacer scroll */
+.navbar.scrolled .hamburger i {
+    color: white; /* Cambiar a blanco al hacer scroll */
+}
+
+/* Responsive Design: Ocultar los separadores y mostrar el ícono de hamburguesa en pantallas pequeñas */
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        right: 0;
+        top: 60px;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+    }
+
+    .nav-links.active {
+        transform: translateX(0);
+    }
+
+    .nav-links li::after {
+        display: none; /* Eliminar los separadores en el menú responsive */
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/* Transiciones suaves para el ícono de hamburguesa */
+.hamburger.active i {
+    transform: rotate(90deg);
+}
+
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../assets/images/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem;
+    margin-top: 90px;
+}
+
+
+.hero h1 span {
+    color: #00bcd4;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #008c9e;
+}
+
+/* About Section */
+.about, .projects, .contact {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+/* Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Contact Section */
+/* Contact Section */
+.contact {
+    background: linear-gradient(135deg, #00bcd4, #008c9e); /* Fondo degradado */
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Diseño con imagen y texto en dos columnas */
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.contact p {
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.contact p a {
+    color: #ffeb3b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact p a:hover {
+    color: #fff176;
+}
+
+/* Imagen en la sección de contacto */
+.contact-content img {
+    max-width: 330px; /* Tamaño reducido de la imagen */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Suavizar la animación */
+}
+
+/* Animación al pasar el cursor sobre la imagen */
+.contact-content img:hover {
+    transform: scale(1.1); /* Zoom al pasar el cursor */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact {
+        padding: 4rem 1rem;
+    }
+
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .contact p {
+        font-size: 1.2rem;
+    }
+
+    /* Cambiar a una columna en pantallas pequeñas */
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content img {
+        margin-top: 2rem; /* Espacio entre el texto y la imagen */
+        max-width: 200px; /* Reducir tamaño en pantallas pequeñas */
+    }
+}
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #00bcd4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Projects Section */
+.projects {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.projects p {
+    margin-bottom: 2rem;
+}
+
+.projects ul {
+    margin-bottom: 3rem;
+}
+
+.projects ul li {
+    margin-bottom: 1rem;
+}
+
+/* Galería de Proyectos */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.gallery-item {
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Animaciones para que las secciones aparezcan suavemente */
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Experiencia Profesional - Timeline */
+.experience {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.experience h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #333;
+}
+
+/* Contenedor de la línea de tiempo */
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    padding-left: 2rem;
+    max-width: 800px;
+    border-left: 2px solid #00bcd4;
+}
+
+/* Estilo de cada elemento de la línea de tiempo */
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 2rem;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -0.9rem;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #00bcd4;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/* Fecha en la línea de tiempo */
+.timeline-date {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00bcd4;
+    margin-bottom: 0.5rem;
+}
+
+/* Contenido de cada tarjeta */
+.timeline-content {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.6rem;
+}
+
+.timeline-content p {
+    color: #666;
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+/* Animaciones */
+.timeline-item {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease;
+}
+
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilos para las listas en experiencia */
+/* Alinear las listas a la izquierda */
+.timeline-content ul {
+    list-style-type: none; /* Eliminar los puntos por defecto */
+    padding-left: 0; /* Eliminar el padding izquierdo */
+    margin-top: 1rem;
+    text-align: left; /* Alinear el contenido de la lista a la izquierda */
+}
+
+.timeline-content li {
+    display: flex; /* Para alinear el icono con el texto */
+    align-items: center;
+    margin-bottom: 1rem; /* Espaciado entre elementos */
+    font-size: 1rem;
+    color: #666; /* Color del texto */
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover para los elementos de la lista */
+.timeline-content li:hover {
+    color: #333; /* Cambiar el color al pasar el cursor */
+}
+
+/* Estilo de los iconos en las listas */
+.timeline-content li::before {
+    content: "\f058"; /* Icono check-circle de Font Awesome */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #00bcd4; /* Color del icono */
+    margin-right: 0.75rem; /* Espacio entre el icono y el texto */
+    font-size: 1.2rem; /* Tamaño del icono */
+    transition: transform 0.3s ease;
+}
+
+.timeline-content li:hover::before {
+    transform: scale(1.2); /* Efecto de aumento en hover */
+}
+
+
+
+/* Hero Section - Mejora del diseño */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Reduce la altura para menos espacio vertical */
+    background-color: #f4f4f4; /* Fondo suave */
+    padding: 2rem 0; /* Ajustar el padding para menos espacio */
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Espacio entre la imagen y el texto */
+    max-width: 1200px;
+    width: 100%;
+    padding: 1rem;
+}
+
+.hero-image img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Ajuste de márgenes entre las secciones */
+section {
+    margin-top: 0;
+    padding: 3rem 2rem;
+}
+
+/* Estilo para el pie de foto */
+.image-credit {
+    font-size: 0.8rem;
+    color: #666;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.image-credit a {
+    color: #00bcd4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.image-credit a:hover {
+    color: #008c9e;
+}
+
+/* About Section */
+.about {
+    background-color: #f9f9f9;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 3rem;
+}
+
+/* Diseño en dos columnas */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+/* Columna de Texto */
+.about-text {
+    flex: 1;
+    max-width: 600px;
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Columna de Habilidades */
+.about-skills {
+    flex: 1;
+    max-width: 400px;
+}
+
+.about-skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-skills li {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.about-skills li i {
+    margin-right: 0.5rem;
+    color: #00bcd4;
+    font-size: 1.5rem;
+}
+
+/* Efecto hover en habilidades */
+.about-skills li:hover i {
+    color: #008c9e;
+}
+
+/* Skills Section */
+.skills {
+    padding: 4rem 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 3rem;
+}
+
+/* Rejilla de habilidades */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Configuración responsive */
+    gap: 2rem;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo de las tarjetas de habilidades */
+.skill-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    max-width: 300px;
+}
+
+/* Ajuste para las columnas en pantallas medianas y grandes */
+@media (min-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr); /* Asegura 2 columnas fijas */
+    }
+}
+
+/* Efectos visuales en las tarjetas */
+.skill-card i {
+    font-size: 3rem;
+    color: #00bcd4;
+    margin-bottom: 1rem;
+}
+
+.skill-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.skill-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+/* Efecto hover para las tarjetas */
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Hacer que las tarjetas se vean más interactivas */
+.skill-card:hover i {
+    color: #008c9e;
+}
+
+
+/* Projects Section */
+.projects {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 3rem;
+}
+
+/* Rejilla de proyectos */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Configuración responsiva */
+    gap: 3rem; /* Aumenta el espacio entre las tarjetas */
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Ajuste para dos columnas en pantallas medianas y grandes */
+@media (min-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr); /* Asegura 2 columnas fijas */
+    }
+}
+
+/* Tarjetas de proyectos */
+.project-card {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 1rem; /* Añade margen lateral para más espacio entre tarjetas */
+}
+
+/* Contenido dentro de la tarjeta */
+.project-content {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 100%;
+    padding: 1.5rem;
+    text-align: left;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+/* Mostrar el contenido en hover */
+.project-card:hover .project-content {
+    transform: translateY(0);
+}
+
+/* Efecto hover para las tarjetas */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón de las tarjetas */
+.project-card .btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: #00bcd4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-card .btn:hover {
+    background-color: #008c9e;
+}
+
+
+/* Estilo general del select */
+/* Estilo general del select */
+/* Estilo general del select */
+#language-select {
+    appearance: none; /* Eliminar la apariencia predeterminada */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+    background-color: #f4f4f4;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 0.5rem 1.5rem; /* Ajustar el padding */
+    font-size: 1rem;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: all 0.3s ease;
+    width: auto; /* Ancho automático */
+    max-width: 100%; /* Ancho máximo del contenedor */
+    min-width: 150px; /* Ancho mínimo */
+    cursor: pointer;
+    position: relative;
+    padding-right: 3rem; /* Más espacio para la flecha y el contenido */
+    margin-right: 2.5rem; /* Añadir espacio a la derecha */
+}
+
+/* Cambiar el estilo del select al hacer hover */
+#language-select:hover {
+    background-color: #eaeaea;
+    border-color: #00bcd4;
+}
+
+/* Cambiar el estilo cuando el select está enfocado */
+#language-select:focus {
+    outline: none; /* Eliminar el borde predeterminado al enfocar */
+    border-color: #00bcd4; /* Cambiar el borde al enfocar */
+    box-shadow: 0 0 5px rgba(0, 188, 212, 0.5); /* Sombra más destacada */
+}
+
+/* Flecha personalizada */
+#language-select::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 1rem; /* Espacio para que la flecha no esté pegada */
+    transform: translateY(-50%);
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: #333;
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%); /* Flecha triangular */
+    pointer-events: none;
+}
+
+

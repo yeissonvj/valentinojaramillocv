@@ -4,7 +4,7 @@ i18next
   .use(i18nextBrowserLanguageDetector)
   .init({
     backend: {
-      loadPath: '/locales/{{lng}}.json' // Ruta para cargar los archivos JSON
+      loadPath: '/valentinojaramillocv/locales/{{lng}}.json'
     },
     lng: 'es', // Idioma por defecto
     fallbackLng: 'es', // Idioma de respaldo

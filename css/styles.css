@@ -54,6 +54,38 @@ body {
     position: relative; /* Para usar el pseudo-elemento ::after */
 }
 
+/* Contenedor del label y select */
+.language-container {
+    display: flex;
+    flex-direction: column; /* Hace que los elementos estén uno encima del otro */
+    align-items: flex-start; /* Alinear el label y el select a la izquierda */
+    margin-right: 1rem; /* Ajusta el margen según sea necesario */
+}
+
+/* Alinear el label encima del select */
+#language-label {
+    font-size: 0.875rem;
+    color: #333; /* Color oscuro por defecto */
+    margin-bottom: 0.25rem; /* Espacio entre el label y el select */
+    transition: color 0.3s ease;
+}
+
+/* Cambiar el color del label al hacer scroll */
+.navbar.scrolled #language-label {
+    color: white; /* Cambia el color del texto a blanco */
+}
+
+/* Estilo del select */
+#language-select {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
 /* Añadir separadores entre los elementos del menú */
 .nav-links li:not(:last-child)::after {
     content: '';
@@ -211,7 +243,7 @@ body {
 .contact {
     background: linear-gradient(135deg, #00bcd4, #008c9e); /* Fondo degradado */
     color: white;
-    padding: 6rem 2rem;
+    padding: 1rem 29rem;
     text-align: center;
 }
 

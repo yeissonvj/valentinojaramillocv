@@ -4,6 +4,8 @@
     "nav-home": "Inicio",
     "nav-about": "Acerca de mí",
     "nav-experience": "Experiencia",
+    "nav-skills":"Habilidades",
+    "language-label": "Seleccione idioma",
 
     "skills-advanced-development": "Desarrollo avanzado de software",
     "skills-problem-solving": "Resolución de problemas",
@@ -132,6 +134,10 @@
   "contact-linkedin": "Valentino Jaramillo",
   "contact-image-credit": "Foto por",
   "contact-image-author": "Aleksandar Savić Almigor",
+
+  "languageSelection": {
+    "selectLanguage": "Seleccione idioma"
+  },
   
     "footer": "&copy; 2024 Valentino Jaramillo"
 }

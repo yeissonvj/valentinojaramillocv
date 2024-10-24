@@ -4,6 +4,7 @@ i18next
   .use(i18nextBrowserLanguageDetector)
   .init({
     backend: {
+      //loadPath: '/locales/{{lng}}.json'
       loadPath: '/valentinojaramillocv/locales/{{lng}}.json'
     },
     lng: 'es', // Idioma por defecto
@@ -13,6 +14,7 @@ i18next
     if (err) console.error(err);
     updateContent();
     updateContentContact();
+    updateContentSelect();
   });
 
 // Actualizar el contenido traducido en la página
@@ -31,6 +33,7 @@ function updateContent() {
     // Sección "About Me"
     document.querySelector('#about h2').textContent = i18next.t('about-title');
     document.querySelector('#about .about-text p').textContent = i18next.t('about-text');
+    document.querySelector('#language-label').textContent = i18next.t('language-label');
 
     // Actualizar las habilidades de la sección "About"
     const skillsList = document.querySelectorAll('#about .about-skills li');
@@ -72,6 +75,11 @@ function updateExperienceSection() {
         updateExperienceItem(i);
     }
 }
+
+function updateContentSelect() {
+    document.getElementById('language-label').innerHTML = i18next.t('languageSelection.selectLanguage');
+  }
+
 
 function updateExperienceItem(itemNumber) {
     const dateSelector = `#experience .timeline-item:nth-child(${itemNumber}) .timeline-date`;

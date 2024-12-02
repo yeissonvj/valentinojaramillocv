@@ -1,3 +1,43 @@
+// Firebase Integration
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js';
+import { getDatabase, ref, set, increment, onValue } from 'https://www.gstatic.com/firebasejs/9.16.0/firebase-database.js';
+
+// Configuración de Firebase
+const firebaseConfig = {
+  apiKey: "TU_API_KEY",
+  authDomain: "TU_AUTH_DOMAIN",
+  databaseURL: "TU_DATABASE_URL",
+  projectId: "TU_PROJECT_ID",
+  storageBucket: "TU_STORAGE_BUCKET",
+  messagingSenderId: "TU_MESSAGING_SENDER_ID",
+  appId: "TU_APP_ID",
+};
+
+// Inicializa Firebase
+const app = initializeApp(firebaseConfig);
+const database = getDatabase(app);
+
+// Función para registrar una visita
+function registrarVisita() {
+  const page = window.location.pathname.replace(/\//g, "_") || "root";
+  const visitRef = ref(database, `visitas/${page}`);
+  set(visitRef, increment(1));
+}
+
+// Función para obtener estadísticas (opcional)
+function obtenerEstadisticas(callback) {
+  const visitasRef = ref(database, 'visitas');
+  onValue(visitasRef, (snapshot) => {
+    const data = snapshot.val();
+    callback(data);
+  });
+}
+
+// Llama a registrarVisita cuando la página carga
+document.addEventListener('DOMContentLoaded', () => {
+  registrarVisita();
+});
+
 // Inicializar i18next con i18next-http-backend
 i18next
   .use(i18nextHttpBackend)

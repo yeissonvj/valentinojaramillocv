@@ -4,13 +4,14 @@ import { getDatabase, ref, set, increment, onValue } from 'https://www.gstatic.c
 
 // Configuración de Firebase
 const firebaseConfig = {
-  apiKey: "TU_API_KEY",
-  authDomain: "TU_AUTH_DOMAIN",
-  databaseURL: "TU_DATABASE_URL",
-  projectId: "TU_PROJECT_ID",
-  storageBucket: "TU_STORAGE_BUCKET",
-  messagingSenderId: "TU_MESSAGING_SENDER_ID",
-  appId: "TU_APP_ID",
+  apiKey: "AIzaSyB_Iy1rWWFz6lJFEfZxEr_SmwXih_UQtkM",
+  authDomain: "portafoliovalentino.firebaseapp.com",
+  databaseURL: "https://portafoliovalentino-default-rtdb.firebaseio.com",
+  projectId: "portafoliovalentino",
+  storageBucket: "portafoliovalentino.firebasestorage.app",
+  messagingSenderId: "1075784839743",
+  appId: "1:1075784839743:web:0b3b81483c345595aefe8a",
+  measurementId: "G-W4K3NLJL0C"
 };
 
 // Inicializa Firebase

@@ -1,6 +1,6 @@
 // Firebase Integration
-//import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js';
-//import { getDatabase, ref, set, increment, onValue } from 'https://www.gstatic.com/firebasejs/9.16.0/firebase-database.js';
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js';
+import { getDatabase, ref, set, increment, onValue } from 'https://www.gstatic.com/firebasejs/9.16.0/firebase-database.js';
 
 // Configuración de Firebase
 const firebaseConfig = {

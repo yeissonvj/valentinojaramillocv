@@ -48,8 +48,8 @@ i18next
       //loadPath: '/locales/{{lng}}.json'
       loadPath: '/valentinojaramillocv/locales/{{lng}}.json'
     },
-    lng: 'es', // Idioma por defecto
-    fallbackLng: 'es', // Idioma de respaldo
+    lng: 'fr', // Idioma por defecto
+    fallbackLng: 'fr', // Idioma de respaldo
     debug: true
   }, function(err, t) {
     if (err) console.error(err);

@@ -1,20 +1,17 @@
 {
-    "title": "Valentino Jaramillo - Portfolio",
-    "logo": "Valentino Jaramillo",
-    "nav-home": "Accueil",
-    "nav-about": "À propos",
-    "nav-experience": "Expérience",
-    "nav-skills":"Compétences",
-    "language-label": "Sélectionner la langue",
-
-    "skills-advanced-development": "Développement de logiciels avancé",
-    "skills-problem-solving": "Résolution de problèmes",
-    "skills-collaboration": "Collaboration et communication",
-    "skills-project-management": "Gestion de projet",
-    "skills-continuous-improvement": "Amélioration continue",
-
-
-    "skills-title": "Compétences",
+  "title": "Valentino Jaramillo - Portfolio",
+  "logo": "Valentino Jaramillo",
+  "nav-home": "Accueil",
+  "nav-about": "À propos",
+  "nav-experience": "Expérience",
+  "nav-skills": "Compétences",
+  "language-label": "Sélectionner la langue",
+  "skills-advanced-development": "Développement de logiciels avancé",
+  "skills-problem-solving": "Résolution de problèmes",
+  "skills-collaboration": "Collaboration et communication",
+  "skills-project-management": "Gestion de projet",
+  "skills-continuous-improvement": "Amélioration continue",
+  "skills-title": "Compétences",
   "skills-1-title": "Développement de logiciels",
   "skills-1-description": "Expérience avancée en C#, Python et JavaScript pour créer des applications efficaces et évolutives.",
   "skills-2-title": "Bases de données",
@@ -27,95 +24,89 @@
   "skills-5-description": "Connaissances des pratiques de sécurité Web, prévention des vulnérabilités et protection des données.",
   "skills-6-title": "Méthodologies agiles",
   "skills-6-description": "Expérience dans la gestion de projets avec des méthodologies agiles comme Scrum et Kanban.",
-
-
-
-
-    "nav-projects": "Projets",
-    "nav-contact": "Contact",
-    "hero-title": "Bonjour ! Je suis Valentino Jaramillo",
-    "hero-text": "Ingénieur logiciel avec plus de 12 ans d'expérience dans le développement de solutions innovantes et évolutives.",
-    "about-title": "À propos de moi",
-    "about-text": "Je suis un développeur de logiciels passionné par l'excellence technique, la résolution efficace de problèmes et l'amélioration continue. Je me concentre sur le leadership technique et la fourniture de solutions de haute qualité. Mon engagement est d'innover et de m'améliorer constamment, en cherchant toujours à être au courant des dernières tendances technologiques.",
-    
-    
-    
-    
-    "experience-title": "Expérience Professionnelle",
-  "experience-item1-title": "Architecte et Responsable Technique – Technolo-GIS",
-  "experience-item1-date": "2022 - 2024",
-  "experience-item1-description": "Intégration et exposition d'API Web, analyse spatiale et géotraitement. Sécurité des applications et assurance qualité logicielle.",
+  "nav-projects": "Projets",
+  "nav-contact": "Contact",
+  "hero-title": "Bonjour ! Je suis Valentino Jaramillo",
+  "hero-text": "Ingénieur logiciel avec plus de 12 ans d'expérience dans le développement de solutions innovantes et évolutives.",
+  "about-title": "À propos de moi",
+  "about-text": "Je suis un développeur de logiciels passionné par l'excellence technique, la résolution efficace de problèmes et l'amélioration continue. Je me concentre sur le leadership technique et la fourniture de solutions de haute qualité. Mon engagement est d'innover et de m'améliorer constamment, en cherchant toujours à être au courant des dernières tendances technologiques.",
+  "experience-title": "Expérience Professionnelle",
+  "experience-item1-title": "Architecte et Développeur Logiciel Freelance",
+  "experience-item1-date": "2025 – Présent",
+  "experience-item1-description": "Conception et développement de solutions full-stack utilisant des architectures modernes et intégrant des technologies avancées.",
   "experience-item1-tasks": [
-    "Mettre en œuvre des capacités de leadership qui permettent la planification, l'exécution et le contrôle réussis des projets logiciels.",
-    "Conception architecturale.",
-    "Mentorat et formation.",
-    "Résolution de problèmes critiques.",
-    "Leadership technique.",
-    "Assurance qualité du code.",
-    "Développement de la sécurité des applications.",
-    "Développement de nouvelles fonctionnalités.",
-    "Cadres agiles : Scrum.",
-    "Livraison continue avec DevOps."
+    "Conception et développement de solutions full-stack sous des architectures modernes, intégrant Next.js 14 avec React 18, TypeScript et Prisma ORM sur PostgreSQL.",
+    "Mise en œuvre d'une authentification avancée avec NextAuth.js et des adaptateurs Prisma, assurant la conformité aux normes de sécurité.",
+    "Conception d'interfaces évolutives avec Tailwind CSS, Radix UI et shadcn/ui, améliorant l'accessibilité et l'expérience utilisateur.",
+    "Mise en œuvre d'une gestion d'état efficace avec Zustand et d'une validation robuste avec React Hook Form + Zod.",
+    "Développement d'applications mobiles avec Flutter (Dart) sous Clean Architecture (couches présentation, domaine et données), garantissant évolutivité et maintenabilité.",
+    "Gestion de la persistance sécurisée des données locales avec Drift (SQLite + SQLCipher) et synchronisation des processus en arrière-plan avec workmanager.",
+    "Intégration de l'authentification avec Firebase Authentication (Google, Apple, email/password) sous le modèle Adapter, préparant la transition vers un backend JWT.",
+    "Conception et mise en œuvre de pipelines CI/CD dans GitHub Actions, incluant builds, tests unitaires, analyse de code et déploiements.",
+    "Mise en œuvre de l'internationalisation (ES/EN/FR), des notifications locales et des analytiques optionnelles (Firebase Analytics + Crashlytics).",
+    "Amélioration de la qualité de livraison grâce à des tests unitaires, des tests de widgets et une intégration continue, atteignant des niveaux élevés de couverture de code."
   ],
-
-  "experience-item2-title": "Développeur Sénior, Consultant SIG – Esri Colombie",
-  "experience-item2-date": "2017 – 2022",
-  "experience-item2-description": "Conception architecturale, assurance qualité du code, leadership technique. Livraison continue avec DevOps, résolution de problèmes critiques.",
+  "experience-item2-title": "Architecte et Responsable Technique - Technolo-GIS",
+  "experience-item2-date": "2022 - 2024",
+  "experience-item2-description": "Leadership dans la définition de l'architecture d'entreprise, développement full-stack et modernisation d'applications.",
   "experience-item2-tasks": [
-    "Intégration et exposition d'API Web, analyse spatiale et géotraitement.",
-    "Appliquer de solides connaissances en développement logiciel pour résoudre efficacement les problèmes dans les différentes applications de l'entreprise.",
-    "Résolution de problèmes critiques.",
-    "Assurance qualité du logiciel.",
-    "Sécurité et intégration des API Web.",
-    "Analyse spatiale et géotraitement.",
-    "Cadres agiles : Scrum.",
-    "Intégration et exposition des API Web.",
-    "Livraison continue avec DevOps."
+    "J'ai dirigé la définition de l'architecture d'entreprise, en appliquant les principes des microservices et du découplage pour assurer l'évolutivité.",
+    "J'ai développé de nouvelles fonctionnalités critiques en C#, Python, React, .NET Core et JavaScript, réduisant de 25 % les temps d'exécution des processus géospatiaux.",
+    "J'ai mis en œuvre des API RESTful documentées avec Swagger/OpenAPI, améliorant l'interopérabilité entre les systèmes internes et externes.",
+    "J'ai intégré des pipelines CI/CD avec Azure DevOps, permettant des déploiements automatiques dans les environnements QA et de production avec un rollback sécurisé.",
+    "J'ai dirigé des initiatives de sécurité dans le cycle de développement, en appliquant l'OWASP et des revues de code statiques.",
+    "Mentorat technique d'équipes allant jusqu'à 10 développeurs, renforçant les bonnes pratiques et les modèles de conception.",
+    "J'ai coordonné la migration des applications existantes vers des architectures modernes basées sur des conteneurs Docker."
   ],
-
-  "experience-item3-title": "Développeur Intermédiaire – INTERGRUPO",
-  "experience-item3-date": "2016 – 2017",
-  "experience-item3-description": "Développement d'applications web et de bureau, support et maintenance.",
+  "experience-item3-title": "Développeur Senior - Esri Colombie",
+  "experience-item3-date": "2017– 2022",
+  "experience-item3-description": "Conception et développement de solutions géospatiales avancées, modernisation des systèmes et leadership d'équipe agile.",
   "experience-item3-tasks": [
-    "Mettre en œuvre des capacités de leadership qui permettent la planification, l'exécution et le contrôle réussis des projets logiciels.",
-    "Conception architecturale.",
-    "Mentorat et formation.",
-    "Résolution de problèmes critiques.",
-    "Leadership technique.",
-    "Assurance qualité du code.",
-    "Développement de la sécurité des applications.",
-    "Développement de nouvelles fonctionnalités.",
-    "Cadres agiles : Scrum.",
-    "Livraison continue avec DevOps."
+    "J'ai conçu et développé des solutions géospatiales avancées intégrant des API RESTful et des bibliothèques SIG pour des clients des secteurs public et privé.",
+    "J'ai mis en œuvre un système de cartes interactives en temps réel dans React, réduisant de 30 % la latence de chargement et de requête.",
+    "J'ai migré les systèmes existants vers .NET Core, augmentant l'évolutivité et réduisant les coûts d'infrastructure de 20 %.",
+    "J'ai dirigé des équipes dans des projets utilisant les méthodologies Scrum, assurant des livraisons itératives de grande valeur.",
+    "J'ai coordonné l'intégration de systèmes d'authentification sécurisés pour les entreprises clientes, garantissant le respect des normes de cybersécurité.",
+    "J'ai participé à la définition d'architectures hybrides (sur site et cloud) pour garantir la continuité opérationnelle.",
+    "J'ai documenté des solutions techniques et dispensé une formation spécialisée aux clients et aux équipes internes.",
+    "J'ai dirigé des projets clés de développement de logiciels pour des solutions géospatiales.",
+    "Mise en œuvre de pratiques sécurisées et de qualité dans le développement de code.",
+    "Développement de nouvelles fonctionnalités en C#, Python, React, .Net.Core, JavaScript.",
+    "Coordination d'équipes agiles selon la méthodologie Scrum."
   ],
-
-  "experience-item4-title": "Développeur Intermédiaire – Procalculo Prosis",
-  "experience-item4-date": "2012 - 2016",
-  "experience-item4-description": "Développement et amélioration des applications d'entreprise axées sur les secteurs de l'énergie et de la géographie.",
+  "experience-item4-title": "Développeur Intermédiaire - INTERGRUPO",
+  "experience-item4-date": "2016 - 2017",
+  "experience-item4-description": "Développement d'applications pour le secteur de l'électricité, optimisation des bases de données et intégration de systèmes.",
   "experience-item4-tasks": [
-    "Conception et planification de solutions techniques en collaboration avec l'équipe.",
-    "Tests automatisés de logiciels pour assurer la conformité aux exigences.",
-    "Améliorations de l'efficacité des performances.",
-    "Revue de code par les pairs pour améliorer la qualité.",
-    "Support technique aux utilisateurs finaux et aux membres de l'équipe."
+    "J'ai développé des applications web et de bureau pour le secteur de l'électricité, en utilisant C#, Windows Forms, Oracle et SQL Server.",
+    "J'ai mis en œuvre des améliorations dans les performances des requêtes SQL, réduisant jusqu'à 40 % les temps de réponse dans les rapports critiques.",
+    "J'ai conçu des API SOAP/REST intégrant des systèmes de facturation avec des plates-formes de surveillance.",
+    "J'ai élaboré des tests unitaires et d'intégration, augmentant la stabilité des livraisons de 20 %.",
+    "J'ai collaboré avec des analystes d'affaires pour convertir les exigences en solutions techniques efficaces."
   ],
-
-  "experience-item5-title": "Développeur Junior – Evolutions Services and Consulting",
-  "experience-item5-date": "2011 - 2012",
-  "experience-item5-description": "Mise en œuvre d'améliorations et de nouvelles fonctionnalités dans les applications Web.",
+  "experience-item5-title": "Développeur Intermédiaire – Procalculo – Prosis",
+  "experience-item5-date": "2012 - 2016",
+  "experience-item5-description": "Leadership dans le développement d'améliorations complexes, assurance qualité et optimisation des performances dans le secteur énergétique.",
   "experience-item5-tasks": [
-    "Écriture de code et développement de nouvelles fonctionnalités.",
-    "Correction de bogues et débogage de code.",
-    "Tests unitaires et création de documentation technique.",
-    "Gestion des versions du code source.",
-    "Optimisation des fonctions opérationnelles du logiciel."
+    "J'ai dirigé le développement et la mise en œuvre d'améliorations complexes de logiciels axés sur les secteurs énergétique et géographique.",
+    "J'ai conçu des solutions techniques en collaboration avec l'équipe, améliorant l'efficacité du projet de 20 %.",
+    "J'ai réalisé des tests automatisés, garantissant une conformité de 98 % aux exigences logicielles.",
+    "J'ai optimisé les performances des applications, réduisant le temps de réponse de 15 %.",
+    "J'ai mis en place des revues de code par les pairs pour garantir la qualité et respecter les meilleures pratiques du secteur.",
+    "J'ai fourni un support technique aux utilisateurs finaux et aux membres de l'équipe, résolvant rapidement les problèmes critiques.",
+    "Développement de nouvelles fonctionnalités en C#, Python, Node, Dojo, .Net.Core, JavaScript."
   ],
-
-
-
-
-
-    "projects-title": "Projets",
+  "experience-item6-title": "Développeur Junior - Evolutions Services and Consulting",
+  "experience-item6-date": "2011 - 2012",
+  "experience-item6-description": "Développement de nouvelles fonctionnalités, optimisation des processus et assurance qualité dans les applications web.",
+  "experience-item6-tasks": [
+    "J'ai développé et mis en œuvre de nouvelles fonctionnalités et améliorations dans des applications web utilisant C#, JavaScript et SQL Server.",
+    "J'ai réduit le temps de résolution des bugs de 25 % en optimisant les processus de débogage et de surveillance.",
+    "J'ai géré les versions du code source et assuré une documentation appropriée pour la maintenance et les futures implémentations.",
+    "J'ai mis en œuvre des tests unitaires, augmentant la stabilité du logiciel de 30 %.",
+    "J'ai collaboré à la correction des bugs et à l'optimisation des performances des applications critiques pour l'entreprise."
+  ],
+  "projects-title": "Projets",
   "projects-1-title": "Technolo-GIS",
   "projects-1-description": "Intégration et exposition d'API Web, analyse spatiale et géotraitement.",
   "projects-1-button": "Voir Projet",
@@ -131,18 +122,13 @@
   "projects-5-title": "Evolutions csas",
   "projects-5-description": "Solution de cartographie géographique avec des capacités d'analyse et de visualisation avancées.",
   "projects-5-button": "Voir Projet",
-    
-    
-    "contact-title": "Contact",
+  "contact-title": "Contact",
   "contact-text-email": "Vous pouvez me contacter par email :",
   "contact-email": "valentinojaramillo77@gmail.com",
- 
   "contact-image-credit": "Photo par",
   "contact-image-author": "Aleksandar Savić Almigor",
-
   "languageSelection": {
     "selectLanguage": "Sélectionnez la langue"
   },
-  
-    "footer": "&copy; 2024 Valentino Jaramillo"
+  "footer": "&copy; 2024 Valentino Jaramillo"
 }

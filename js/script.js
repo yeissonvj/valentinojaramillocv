@@ -4,14 +4,14 @@ import { getDatabase, ref, set, increment, onValue } from 'https://www.gstatic.c
 
 // Configuración de Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyB_Iy1rWWFz6lJFEfZxEr_SmwXih_UQtkM",
-  authDomain: "portafoliovalentino.firebaseapp.com",
-  databaseURL: "https://portafoliovalentino-default-rtdb.firebaseio.com",
-  projectId: "portafoliovalentino",
-  storageBucket: "portafoliovalentino.firebasestorage.app",
-  messagingSenderId: "1075784839743",
-  appId: "1:1075784839743:web:0b3b81483c345595aefe8a",
-  measurementId: "G-W4K3NLJL0C"
+    apiKey: "AIzaSyB_Iy1rWWFz6lJFEfZxEr_SmwXih_UQtkM",
+    authDomain: "portafoliovalentino.firebaseapp.com",
+    databaseURL: "https://portafoliovalentino-default-rtdb.firebaseio.com",
+    projectId: "portafoliovalentino",
+    storageBucket: "portafoliovalentino.firebasestorage.app",
+    messagingSenderId: "1075784839743",
+    appId: "1:1075784839743:web:0b3b81483c345595aefe8a",
+    measurementId: "G-W4K3NLJL0C"
 };
 
 // Inicializa Firebase
@@ -20,43 +20,45 @@ const database = getDatabase(app);
 
 // Función para registrar una visita
 function registrarVisita() {
-  const page = window.location.pathname.replace(/\//g, "_") || "root";
-  const visitRef = ref(database, `visitas/${page}`);
-  set(visitRef, increment(1));
+    const page = window.location.pathname.replace(/\//g, "_") || "root";
+    const visitRef = ref(database, `visitas/${page}`);
+    set(visitRef, increment(1));
 }
 
 // Función para obtener estadísticas (opcional)
 function obtenerEstadisticas(callback) {
-  const visitasRef = ref(database, 'visitas');
-  onValue(visitasRef, (snapshot) => {
-    const data = snapshot.val();
-    callback(data);
-  });
+    const visitasRef = ref(database, 'visitas');
+    onValue(visitasRef, (snapshot) => {
+        const data = snapshot.val();
+        callback(data);
+    });
 }
 
 // Llama a registrarVisita cuando la página carga
 document.addEventListener('DOMContentLoaded', () => {
-  registrarVisita();
+    registrarVisita();
 });
 
 // Inicializar i18next con i18next-http-backend
 i18next
-  .use(i18nextHttpBackend)
-  .use(i18nextBrowserLanguageDetector)
-  .init({
-    backend: {
-      //loadPath: '/locales/{{lng}}.json'
-      loadPath: '/valentinojaramillocv/locales/{{lng}}.json'
-    },
-    lng: 'fr', // Idioma por defecto
-    fallbackLng: 'fr', // Idioma de respaldo
-    debug: true
-  }, function(err, t) {
-    if (err) console.error(err);
-    updateContent();
-    updateContentContact();
-    updateContentSelect();
-  });
+    .use(i18nextHttpBackend)
+    .use(i18nextBrowserLanguageDetector)
+    .init({
+        backend: {
+            //loadPath: '/locales/{{lng}}.json'
+            loadPath: (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+                ? '/locales/{{lng}}.json'
+                : '/valentinojaramillocv/locales/{{lng}}.json'
+        },
+        lng: 'fr', // Idioma por defecto
+        fallbackLng: 'fr', // Idioma de respaldo
+        debug: true
+    }, function (err, t) {
+        if (err) console.error(err);
+        updateContent();
+        updateContentContact();
+        updateContentSelect();
+    });
 
 // Actualizar el contenido traducido en la página
 function updateContent() {
@@ -101,9 +103,9 @@ function updateContent() {
 }
 
 // Cambiar idioma al seleccionar uno en el menú
-document.getElementById('language-select').addEventListener('change', function() {
+document.getElementById('language-select').addEventListener('change', function () {
     const selectedLanguage = this.value;
-    i18next.changeLanguage(selectedLanguage, function(err, t) {
+    i18next.changeLanguage(selectedLanguage, function (err, t) {
         if (err) console.error(err);
         updateContent();
         updateContentContact();
@@ -112,14 +114,14 @@ document.getElementById('language-select').addEventListener('change', function()
 
 // Actualizar los ítems de la experiencia profesional
 function updateExperienceSection() {
-    for (let i = 1; i <= 5; i++) {
+    for (let i = 1; i <= 6; i++) {
         updateExperienceItem(i);
     }
 }
 
 function updateContentSelect() {
     document.getElementById('language-label').innerHTML = i18next.t('languageSelection.selectLanguage');
-  }
+}
 
 
 function updateExperienceItem(itemNumber) {
@@ -189,29 +191,29 @@ function updateProjectsSection() {
 
 // Actualizar el contenido de la sección "Contacto"
 function updateContentContact() {
-  // Actualizar el título de la sección "Contacto"
-  const contactTitle = document.querySelector('#contact h2');
-  if (contactTitle) {
-      contactTitle.textContent = i18next.t('contact-title');
-  }
+    // Actualizar el título de la sección "Contacto"
+    const contactTitle = document.querySelector('#contact h2');
+    if (contactTitle) {
+        contactTitle.textContent = i18next.t('contact-title');
+    }
 
-  // Actualizar el párrafo del correo electrónico, incluyendo el texto introductorio
-  const contactEmailParagraph = document.querySelector('#contact .contact-content div:nth-child(1) p:nth-child(1)');
-  if (contactEmailParagraph) {
-      contactEmailParagraph.innerHTML = `${i18next.t('contact-text-email')} <a href="mailto:${i18next.t('contact-email')}">${i18next.t('contact-email')}</a>`;
-  }
+    // Actualizar el párrafo del correo electrónico, incluyendo el texto introductorio
+    const contactEmailParagraph = document.querySelector('#contact .contact-content div:nth-child(1) p:nth-child(1)');
+    if (contactEmailParagraph) {
+        contactEmailParagraph.innerHTML = `${i18next.t('contact-text-email')} <a href="mailto:${i18next.t('contact-email')}">${i18next.t('contact-email')}</a>`;
+    }
 
-  // Actualizar el párrafo de LinkedIn, incluyendo el texto introductorio
-  const contactLinkedInParagraph = document.querySelector('#contact .contact-content div:nth-child(1) p:nth-child(2)');
-  if (contactLinkedInParagraph) {
-      contactLinkedInParagraph.innerHTML = `${i18next.t('contact-text-linkedin')} <a href="https://www.linkedin.com/in/valentino-jaramillo-89427851/">${i18next.t('contact-linkedin')}</a>`;
-  }
+    // Actualizar el párrafo de LinkedIn, incluyendo el texto introductorio
+    const contactLinkedInParagraph = document.querySelector('#contact .contact-content div:nth-child(1) p:nth-child(2)');
+    if (contactLinkedInParagraph) {
+        contactLinkedInParagraph.innerHTML = `${i18next.t('contact-text-linkedin')} <a href="https://www.linkedin.com/in/valentino-jaramillo-89427851/">${i18next.t('contact-linkedin')}</a>`;
+    }
 
-  // Actualizar el crédito de la imagen
-  const contactImageCreditParagraph = document.querySelector('#contact .image-credit');
-  if (contactImageCreditParagraph) {
-      contactImageCreditParagraph.innerHTML = `${i18next.t('contact-image-credit')} <a href="https://www.aleksandarsavic.com/" target="_blank">${i18next.t('contact-image-author')}</a>`;
-  }
+    // Actualizar el crédito de la imagen
+    const contactImageCreditParagraph = document.querySelector('#contact .image-credit');
+    if (contactImageCreditParagraph) {
+        contactImageCreditParagraph.innerHTML = `${i18next.t('contact-image-credit')} <a href="https://www.aleksandarsavic.com/" target="_blank">${i18next.t('contact-image-author')}</a>`;
+    }
 }
 
 

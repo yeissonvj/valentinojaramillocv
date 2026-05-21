@@ -38,9 +38,6 @@
     "Designed and developed full-stack solutions under modern architectures, integrating Next.js 14 with React 18, TypeScript, and Prisma ORM on PostgreSQL.",
     "Implemented advanced authentication with NextAuth.js and Prisma adapters, ensuring compliance with security standards.",
     "Designed scalable interfaces with Tailwind CSS, Radix UI, and shadcn/ui, improving accessibility and user experience.",
-    "Implemented efficient state management with Zustand and robust validation with React Hook Form + Zod.",
-    "Developed mobile applications with Flutter (Dart) using Clean Architecture (presentation, domain, and data layers), ensuring scalability and maintainability.",
-    "Managed secure local data persistence with Drift (SQLite + SQLCipher), and synchronized background processes with workmanager.",
     "Integrated authentication with Firebase Authentication (Google, Apple, email/password) using the Adapter pattern, preparing for a transition to a JWT backend.",
     "Designed and implemented CI/CD pipelines in GitHub Actions, including builds, unit tests, code analysis, and deployments.",
     "Implemented internationalization (ES/EN/FR), local notifications, and optional analytics (Firebase Analytics + Crashlytics).",
@@ -130,5 +127,5 @@
   "languageSelection": {
     "selectLanguage": "Select language"
   },
-  "footer": "&copy; 2024 Valentino Jaramillo"
+  "footer": "&copy; {{year}} Valentino Jaramillo"
 }

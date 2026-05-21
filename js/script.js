@@ -99,7 +99,7 @@ function updateContent() {
     updateProjectsSection();
 
     // Actualizar el pie de página
-    document.querySelector('footer p').innerHTML = i18next.t('footer');
+    document.querySelector('footer p').innerHTML = i18next.t('footer', { year: new Date().getFullYear() });
 }
 
 // Cambiar idioma al seleccionar uno en el menú

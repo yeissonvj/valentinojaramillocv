@@ -63,7 +63,7 @@ i18next
 // Actualizar el contenido traducido en la página
 function updateContent() {
     document.title = i18next.t('title');
-    document.querySelector('.logo').textContent = i18next.t('logo');
+    document.querySelector('.logo').innerHTML = `${i18next.t('logo')} <i class="fas fa-code"></i>`;
     document.querySelector('[href="#home"]').textContent = i18next.t('nav-home');
     document.querySelector('[href="#about"]').textContent = i18next.t('nav-about');
     document.querySelector('[href="#experience"]').textContent = i18next.t('nav-experience');
@@ -232,8 +232,8 @@ document.querySelectorAll('.nav-links a').forEach(anchor => {
 document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('section');
     const options = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px"
+        threshold: 0.05,
+        rootMargin: "0px"
     };
 
     const observer = new IntersectionObserver(function (entries, observer) {
@@ -250,27 +250,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// Animaciones en la línea de tiempo
-document.addEventListener('DOMContentLoaded', function () {
-    const timelineItems = document.querySelectorAll('.timeline-item');
-    const observerOptions = {
-        threshold: 0.2,
-        rootMargin: "0px 0px -50px 0px"
-    };
-
-    const observer = new IntersectionObserver(function (entries, observer) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    timelineItems.forEach(item => {
-        observer.observe(item);
-    });
-});
+// Timeline items animate via CSS when #experience section gets .visible class
 
 // Controlar el comportamiento del menú hamburguesa
 const hamburger = document.querySelector('.hamburger');

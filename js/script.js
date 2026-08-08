@@ -45,10 +45,9 @@ i18next
     .use(i18nextBrowserLanguageDetector)
     .init({
         backend: {
-            //loadPath: '/locales/{{lng}}.json'
             loadPath: (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
-                ? '/locales/{{lng}}.json'
-                : '/valentinojaramillocv/locales/{{lng}}.json'
+                ? '/locales/{{lng}}.json?v=2'
+                : '/valentinojaramillocv/locales/{{lng}}.json?v=2'
         },
         lng: 'es', // Idioma por defecto
         fallbackLng: 'es', // Idioma de respaldo

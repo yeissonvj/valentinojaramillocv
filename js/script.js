@@ -99,31 +99,39 @@ function updateContent() {
     updateExperienceSection();
 
     // Actualizar la sección "Habilidades"
-    document.querySelector('#skills h2').textContent = i18next.t('skills-title');
-    updateSkillsSection();
+    try {
+        document.querySelector('#skills h2').textContent = i18next.t('skills-title');
+        updateSkillsSection();
+    } catch (e) { console.error('Error in skills section', e); }
 
     // Actualizar la sección "Proyectos"
-    document.querySelector('#projects h2').textContent = i18next.t('projects-title');
-    updateProjectsSection();
+    try {
+        document.querySelector('#projects h2').textContent = i18next.t('projects-title');
+        updateProjectsSection();
+    } catch (e) { console.error('Error in projects section', e); }
 
     // Actualizar Educación
-    const eduTitle = document.querySelector('#education h2');
-    if (eduTitle) {
-        eduTitle.textContent = i18next.t('education-title');
-        document.querySelector('#edu-1').textContent = i18next.t('education-1');
-        document.querySelector('#edu-2').textContent = i18next.t('education-2');
-        document.querySelector('#edu-3').textContent = i18next.t('education-3');
-        document.querySelector('#edu-4').textContent = i18next.t('education-4');
-    }
+    try {
+        const eduTitle = document.querySelector('#education h2');
+        if (eduTitle) {
+            eduTitle.textContent = i18next.t('education-title');
+            document.querySelector('#edu-1').textContent = i18next.t('education-1');
+            document.querySelector('#edu-2').textContent = i18next.t('education-2');
+            document.querySelector('#edu-3').textContent = i18next.t('education-3');
+            document.querySelector('#edu-4').textContent = i18next.t('education-4');
+        }
+    } catch (e) { console.error('Error in education section', e); }
 
     // Actualizar Idiomas
-    const langTitle = document.querySelector('#languages h2');
-    if (langTitle) {
-        langTitle.textContent = i18next.t('languages-title');
-        document.querySelector('#lang-1').textContent = i18next.t('languages-1');
-        document.querySelector('#lang-2').textContent = i18next.t('languages-2');
-        document.querySelector('#lang-3').textContent = i18next.t('languages-3');
-    }
+    try {
+        const langTitle = document.querySelector('#languages h2');
+        if (langTitle) {
+            langTitle.textContent = i18next.t('languages-title');
+            document.querySelector('#lang-1').textContent = i18next.t('languages-1');
+            document.querySelector('#lang-2').textContent = i18next.t('languages-2');
+            document.querySelector('#lang-3').textContent = i18next.t('languages-3');
+        }
+    } catch (e) { console.error('Error in languages section', e); }
 
     // Actualizar el pie de página
     document.querySelector('footer p').innerHTML = i18next.t('footer', { year: new Date().getFullYear() });

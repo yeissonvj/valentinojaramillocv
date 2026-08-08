@@ -413,6 +413,20 @@ section.visible {
   text-align: justify;
 }
 
+.about-text p {
+  margin-bottom: 1.2rem;
+}
+
+.about-text p:last-child {
+  margin-bottom: 0;
+}
+
+.about-text .lead {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--clr-text);
+}
+
 .about-skills {
   flex: 0 0 auto;
   min-width: 240px;

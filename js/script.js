@@ -82,7 +82,9 @@ function updateContent() {
 
     // Sección "About Me"
     document.querySelector('#about h2').textContent = i18next.t('about-title');
-    document.querySelector('#about .about-text p').textContent = i18next.t('about-text');
+    document.querySelector('#about-p1').textContent = i18next.t('about-text-1');
+    document.querySelector('#about-p2').textContent = i18next.t('about-text-2');
+    document.querySelector('#about-p3').textContent = i18next.t('about-text-3');
     document.querySelector('#language-label').textContent = i18next.t('language-label');
 
     // Actualizar las habilidades de la sección "About"

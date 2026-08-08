@@ -290,25 +290,24 @@ section.visible {
   overflow: hidden;
 }
 
+.hero-video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.6; /* Slight opacity so it acts more like a background and the text is readable */
+}
+
 .hero-content {
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 4rem;
   max-width: var(--max-w);
   width: 100%;
-}
-
-.hero-image img {
-  width: 340px;
-  max-width: 100%;
-  border-radius: var(--r-lg);
-  box-shadow: var(--shadow-lg), 0 0 0 5px rgba(6, 182, 212, 0.15);
-  transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
-}
-
-.hero-image img:hover {
-  transform: scale(1.03);
-  box-shadow: var(--shadow-lg), 0 0 0 8px rgba(6, 182, 212, 0.22);
+  z-index: 1; /* Keep content on top of video */
 }
 
 .image-credit {
@@ -328,24 +327,27 @@ section.visible {
 
 .hero-text {
   flex: 1;
-  text-align: left;
+  text-align: center;
 }
 
 .hero-text h1 {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 700;
   color: var(--clr-text);
   line-height: 1.2;
   margin-bottom: 1.25rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Add text shadow for better readability on video */
 }
 
 .hero-text h1 span { color: var(--clr-primary); }
 
 .hero-text p {
-  font-size: 1.1rem;
-  color: var(--clr-text-muted);
+  font-size: 1.2rem;
+  color: #fff;
   line-height: 1.8;
-  max-width: 520px;
+  max-width: 650px;
+  margin: 0 auto;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
 }
 
 @media (max-width: 768px) {
@@ -353,7 +355,6 @@ section.visible {
   .hero-content { flex-direction: column; text-align: center; gap: 2rem; }
   .hero-text { text-align: center; }
   .hero-text p { margin: 0 auto; }
-  .hero-image img { width: 260px; }
 }
 
 /* =====================

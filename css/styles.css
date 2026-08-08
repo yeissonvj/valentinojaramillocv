@@ -140,6 +140,13 @@ section.visible {
   transition: color var(--dur) var(--ease);
 }
 
+.header-logo {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+}
+
+
 .logo i {
   font-size: 1.25rem;
   color: var(--clr-primary);

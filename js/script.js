@@ -62,7 +62,7 @@ i18next
 // Actualizar el contenido traducido en la página
 function updateContent() {
     document.title = i18next.t('title');
-    document.querySelector('.logo').innerHTML = `${i18next.t('logo')} <i class="fas fa-code"></i>`;
+    document.querySelector('.logo-text').textContent = i18next.t('logo');
     document.querySelector('[href="#home"]').textContent = i18next.t('nav-home');
     document.querySelector('[href="#about"]').textContent = i18next.t('nav-about');
     document.querySelector('[href="#experience"]').textContent = i18next.t('nav-experience');

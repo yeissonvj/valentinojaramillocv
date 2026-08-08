@@ -424,7 +424,7 @@ section.visible {
 
 .about-text:not(:hover) p:first-child,
 .about-text p:hover {
-  font-weight: 500;
+  font-weight: 600;
   color: var(--clr-text);
 }
 

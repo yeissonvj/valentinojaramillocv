@@ -40,8 +40,9 @@
     "experience-title": "Experiencia Profesional",
     "experience-item1-title": "Arquitecto y Desarrollador de Software Freelance",
     "experience-item1-date": "2025 - Presente",
-    "experience-item1-description": "Diseño y desarrollo de soluciones full-stack y arquitecturas modernas utilizando Next.js, React, TypeScript, .NET y tecnologías cloud, aplicando principios de Clean Architecture, SOLID y separación de responsabilidades.",
+    "experience-item1-description": "",
     "experience-item1-tasks": [
+        "Diseño y desarrollo de soluciones full-stack y arquitecturas modernas utilizando Next.js, React, TypeScript, .NET y tecnologías cloud, aplicando principios de Clean Architecture, SOLID y separación de responsabilidades.",
         "Diseño e implementación de soluciones de IA y Agentic AI orientadas a la automatización de procesos empresariales, integrando LLMs, workflows, herramientas y APIs dentro de aplicaciones de software.",
         "Desarrollo de procesos de automatización inteligente, incluyendo generación y procesamiento de facturas, validación de información y ejecución de flujos de negocio con apoyo de IA y mecanismos de supervisión (Human-in-the-Loop).",
         "Aplicación de AI-Assisted Software Engineering como herramienta de apoyo al análisis, diseño, desarrollo, refactorización, generación de pruebas y documentación, manteniendo control técnico sobre arquitectura, calidad y seguridad del software.",
@@ -54,8 +55,9 @@
     ],
     "experience-item2-title": "Arquitecto y Líder Técnico | Technolo-GIS",
     "experience-item2-date": "2022 - 2024",
-    "experience-item2-description": "Lideré la arquitectura empresarial basada en microservicios, garantizando escalabilidad y mantenibilidad a largo plazo.",
+    "experience-item2-description": "",
     "experience-item2-tasks": [
+        "Lideré la arquitectura empresarial basada en microservicios, garantizando escalabilidad y mantenibilidad a largo plazo.",
         "Desarrollé funcionalidades críticas en C#, .NET Core, Python y React, reduciendo un 25% los tiempos de ejecución de procesos geoespaciales.",
         "Implementé y documenté APIs RESTful con Swagger/OpenAPI, mejorando la interoperabilidad entre sistemas.",
         "Gestioné pipelines de CI/CD en Azure DevOps con despliegues automáticos y rollback seguro en entornos QA y producción.",
@@ -64,8 +66,9 @@
     ],
     "experience-item3-title": "Desarrollador Senior | Esri Colombia",
     "experience-item3-date": "2017 - 2022",
-    "experience-item3-description": "Diseñé y desarrollé soluciones geoespaciales avanzadas para clientes del sector público y privado utilizando APIs RESTful y tecnologías SIG.",
+    "experience-item3-description": "",
     "experience-item3-tasks": [
+        "Diseñé y desarrollé soluciones geoespaciales avanzadas para clientes del sector público y privado utilizando APIs RESTful y tecnologías SIG.",
         "Implementé sistemas de mapas interactivos en tiempo real con Dojo, reduciendo un 30% la latencia de carga.",
         "Lideré la migración de sistemas legacy a .NET Core, aumentando la escalabilidad y reduciendo costos de infraestructura en un 20%.",
         "Trabajé con equipos bajo metodología Scrum, asegurando entregas iterativas de alto valor.",
@@ -74,24 +77,27 @@
     ],
     "experience-item4-title": "Desarrollador Intermedio | INTERGRUPO",
     "experience-item4-date": "2016 - 2017",
-    "experience-item4-description": "Desarrollé aplicaciones web y de escritorio para el sector eléctrico con C#, Windows Forms, Oracle y SQL Server.",
+    "experience-item4-description": "",
     "experience-item4-tasks": [
+        "Desarrollé aplicaciones web y de escritorio para el sector eléctrico con C#, Windows Forms, Oracle y SQL Server.",
         "Optimizé consultas SQL complejas, reduciendo hasta un 40% los tiempos de respuesta en reportes críticos.",
         "Diseñé e implementé APIs SOAP y REST para integración con sistemas de facturación y monitoreo.",
         "Incrementé la estabilidad de las entregas en un 20% mediante pruebas unitarias e integración."
     ],
     "experience-item5-title": "Desarrollador Intermedio | Procalculo - Prosis",
     "experience-item5-date": "2012 - 2016",
-    "experience-item5-description": "Lideré el desarrollo e implementación de mejoras complejas en software para los sectores energético y geográfico.",
+    "experience-item5-description": "",
     "experience-item5-tasks": [
+        "Lideré el desarrollo e implementación de mejoras complejas en software para los sectores energético y geográfico.",
         "Mejoré la eficiencia de proyectos en un 20% mediante soluciones técnicas colaborativas.",
         "Implementé pruebas automatizadas alcanzando un 98% de cumplimiento de requisitos.",
         "Optimicé el rendimiento de aplicaciones, reduciendo tiempos de respuesta en un 15%."
     ],
     "experience-item6-title": "Desarrollador Junior | Evolutions Services and Consulting",
     "experience-item6-date": "2011 - 2012",
-    "experience-item6-description": "Desarrollé nuevas funcionalidades en aplicaciones web con C#, JavaScript y SQL Server.",
+    "experience-item6-description": "",
     "experience-item6-tasks": [
+        "Desarrollé nuevas funcionalidades en aplicaciones web con C#, JavaScript y SQL Server.",
         "Reduje el tiempo de resolución de bugs en un 25% mediante optimización de procesos de depuración.",
         "Implementé pruebas unitarias, aumentando la estabilidad del software en un 30%."
     ],

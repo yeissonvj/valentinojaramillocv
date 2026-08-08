@@ -158,7 +158,15 @@ function updateExperienceItem(itemNumber) {
 
     document.querySelector(dateSelector).textContent = i18next.t(`experience-item${itemNumber}-date`);
     document.querySelector(titleSelector).textContent = i18next.t(`experience-item${itemNumber}-title`);
-    document.querySelector(descriptionSelector).textContent = i18next.t(`experience-item${itemNumber}-description`);
+    
+    const descElement = document.querySelector(descriptionSelector);
+    const descText = i18next.t(`experience-item${itemNumber}-description`);
+    if (!descText || descText.trim() === "") {
+        descElement.style.display = "none";
+    } else {
+        descElement.style.display = "block";
+        descElement.textContent = descText;
+    }
 
     // Actualizar la lista de tareas
     const tasks = i18next.t(`experience-item${itemNumber}-tasks`, { returnObjects: true });

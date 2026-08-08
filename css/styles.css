@@ -158,9 +158,15 @@ section.visible {
 
 .nav-links li { position: relative; }
 
-/* Remove old separator lines */
-.nav-links li::after,
-.nav-links li:not(:last-child)::after { display: none; }
+/* Add separators */
+.nav-links li:not(:last-child)::after { 
+  content: '|';
+  color: var(--clr-text-muted);
+  opacity: 0.6;
+  margin-left: 0.15rem;
+  font-size: 0.8rem;
+  pointer-events: none;
+}
 
 .nav-links li a {
   text-decoration: none;
@@ -270,6 +276,7 @@ section.visible {
 
   .nav-links.active { transform: translateX(0); }
   .nav-links li a { font-size: 1.15rem; color: #f1f5f9; }
+  .nav-links li:not(:last-child)::after { display: none; } /* Hide separators on mobile */
   .hamburger { display: block; }
 }
 

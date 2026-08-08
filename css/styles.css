@@ -415,14 +415,15 @@ section.visible {
 
 .about-text p {
   margin-bottom: 1.2rem;
+  transition: color 0.3s var(--ease), font-weight 0.3s var(--ease);
 }
 
 .about-text p:last-child {
   margin-bottom: 0;
 }
 
-.about-text .lead {
-  font-size: 1.15rem;
+.about-text:not(:hover) p:first-child,
+.about-text p:hover {
   font-weight: 500;
   color: var(--clr-text);
 }

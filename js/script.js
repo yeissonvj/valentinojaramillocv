@@ -50,8 +50,8 @@ i18next
                 ? '/locales/{{lng}}.json'
                 : '/valentinojaramillocv/locales/{{lng}}.json'
         },
-        lng: 'fr', // Idioma por defecto
-        fallbackLng: 'fr', // Idioma de respaldo
+        lng: 'es', // Idioma por defecto
+        fallbackLng: 'es', // Idioma de respaldo
         debug: true
     }, function (err, t) {
         if (err) console.error(err);
@@ -69,6 +69,13 @@ function updateContent() {
     document.querySelector('[href="#experience"]').textContent = i18next.t('nav-experience');
     document.querySelector('[href="#skills"]').textContent = i18next.t('nav-skills');
     document.querySelector('[href="#projects"]').textContent = i18next.t('nav-projects');
+    
+    const navEducation = document.querySelector('[href="#education"]');
+    if (navEducation) navEducation.textContent = i18next.t('nav-education');
+    
+    const navLanguages = document.querySelector('[href="#languages"]');
+    if (navLanguages) navLanguages.textContent = i18next.t('nav-languages');
+    
     document.querySelector('[href="#contact"]').textContent = i18next.t('nav-contact');
     document.querySelector('.hero-text h1').textContent = i18next.t('hero-title');
     document.querySelector('.hero-text p').textContent = i18next.t('hero-text');
@@ -97,6 +104,25 @@ function updateContent() {
     // Actualizar la sección "Proyectos"
     document.querySelector('#projects h2').textContent = i18next.t('projects-title');
     updateProjectsSection();
+
+    // Actualizar Educación
+    const eduTitle = document.querySelector('#education h2');
+    if (eduTitle) {
+        eduTitle.textContent = i18next.t('education-title');
+        document.querySelector('#edu-1').textContent = i18next.t('education-1');
+        document.querySelector('#edu-2').textContent = i18next.t('education-2');
+        document.querySelector('#edu-3').textContent = i18next.t('education-3');
+        document.querySelector('#edu-4').textContent = i18next.t('education-4');
+    }
+
+    // Actualizar Idiomas
+    const langTitle = document.querySelector('#languages h2');
+    if (langTitle) {
+        langTitle.textContent = i18next.t('languages-title');
+        document.querySelector('#lang-1').textContent = i18next.t('languages-1');
+        document.querySelector('#lang-2').textContent = i18next.t('languages-2');
+        document.querySelector('#lang-3').textContent = i18next.t('languages-3');
+    }
 
     // Actualizar el pie de página
     document.querySelector('footer p').innerHTML = i18next.t('footer', { year: new Date().getFullYear() });
@@ -148,12 +174,7 @@ function updateExperienceItem(itemNumber) {
 // Actualizar las habilidades
 function updateSkillsSection() {
     const skills = [
-        { id: 1, icon: 'fa-laptop-code' },
-        { id: 2, icon: 'fa-database' },
-        { id: 3, icon: 'fa-network-wired' },
-        { id: 4, icon: 'fa-cogs' },
-        { id: 5, icon: 'fa-lock' },
-        { id: 6, icon: 'fa-project-diagram' }
+        { id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }, { id: 6 }, { id: 7 }, { id: 8 }, { id: 9 }
     ];
 
     skills.forEach(skill => {
@@ -161,8 +182,10 @@ function updateSkillsSection() {
         const skillDescription = i18next.t(`skills-${skill.id}-description`);
 
         const skillCard = document.querySelector(`#skills .skill-card:nth-child(${skill.id})`);
-        skillCard.querySelector('h3').textContent = skillTitle;
-        skillCard.querySelector('p').textContent = skillDescription;
+        if (skillCard) {
+            skillCard.querySelector('h3').textContent = skillTitle;
+            skillCard.querySelector('p').textContent = skillDescription;
+        }
     });
 }
 

@@ -157,7 +157,10 @@ function updateExperienceItem(itemNumber) {
     const descriptionSelector = `#experience .timeline-item:nth-child(${itemNumber}) p`;
     const listSelector = `#experience .timeline-item:nth-child(${itemNumber}) ul`;
 
-    document.querySelector(dateSelector).textContent = i18next.t(`experience-item${itemNumber}-date`);
+    const dateElement = document.querySelector(dateSelector);
+    if (!dateElement) return; // Prevent crash if HTML is missing an item
+    
+    dateElement.textContent = i18next.t(`experience-item${itemNumber}-date`);
     document.querySelector(titleSelector).textContent = i18next.t(`experience-item${itemNumber}-title`);
     
     const descElement = document.querySelector(descriptionSelector);

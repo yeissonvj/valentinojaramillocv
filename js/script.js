@@ -149,7 +149,7 @@ document.getElementById('language-select').addEventListener('change', function (
 
 // Actualizar los ítems de la experiencia profesional
 function updateExperienceSection() {
-    for (let i = 1; i <= 6; i++) {
+    for (let i = 1; i <= 7; i++) {
         updateExperienceItem(i);
     }
 }
@@ -216,7 +216,8 @@ function updateProjectsSection() {
         { id: 2, link: 'https://www.esri.co/en-co/home' },
         { id: 3, link: 'https://www.softwareone.com/en' },
         { id: 4, link: 'https://www.procalculo.com/index.html' },
-        { id: 5, link: 'https://evolutionscsas.com/?page=Inicio' }
+        { id: 5, link: 'https://evolutionscsas.com/?page=Inicio' },
+        { id: 6, link: 'https://www.ssterraconsultores.com/' }
     ];
 
     projects.forEach(project => {

@@ -103,6 +103,13 @@
         "Reduje el tiempo de resolución de bugs en un 25% mediante optimización de procesos de depuración.",
         "Implementé pruebas unitarias, aumentando la estabilidad del software en un 30%."
     ],
+    "experience-item7-title": "Desarrollador Web - SS Terra Consultores",
+    "experience-item7-date": "2024",
+    "experience-item7-description": "Desarrollo de sitio web corporativo para la consultora SS Terra.",
+    "experience-item7-tasks": [
+        "Diseño e implementación del sitio web corporativo.",
+        "Optimización de experiencia de usuario (UX) y rendimiento."
+    ],
     
     "education-title": "Educación y Certificaciones",
     "education-1": "Especialización en Seguridad Informática | UNAD | 2019",
@@ -131,6 +138,9 @@
     "projects-5-title": "Evolutions csas",
     "projects-5-description": "Solución de mapeo geográfico con capacidades avanzadas de análisis y visualización.",
     "projects-5-button": "Ver Proyecto",
+    "projects-6-title": "SS Terra Consultores",
+    "projects-6-description": "Sitio web corporativo para firma de consultoría con enfoque en servicios empresariales.",
+    "projects-6-button": "Ver Proyecto",
     
     "contact-title": "Contacto",
     "contact-text-email": "Puedes contactarme por correo:",

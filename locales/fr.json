@@ -110,6 +110,13 @@
     "J'ai mis en œuvre des tests unitaires, augmentant la stabilité du logiciel de 30 %.",
     "J'ai collaboré à la correction des bugs et à l'optimisation des performances des applications critiques pour l'entreprise."
   ],
+  "experience-item7-title": "Développeur Web - SS Terra Consultores",
+  "experience-item7-date": "2024",
+  "experience-item7-description": "Développement du site web de l'entreprise pour le cabinet de conseil SS Terra.",
+  "experience-item7-tasks": [
+    "Conception et mise en œuvre du site web de l'entreprise.",
+    "Optimisation de l'expérience utilisateur (UX) et des performances."
+  ],
   "projects-title": "Projets",
   "projects-1-title": "Technolo-GIS",
   "projects-1-description": "Intégration et exposition d'API Web, analyse spatiale et géotraitement.",
@@ -126,6 +133,9 @@
   "projects-5-title": "Evolutions csas",
   "projects-5-description": "Solution de cartographie géographique avec des capacités d'analyse et de visualisation avancées.",
   "projects-5-button": "Voir Projet",
+  "projects-6-title": "SS Terra Consultores",
+  "projects-6-description": "Site web d'entreprise pour un cabinet de conseil axé sur les services aux entreprises.",
+  "projects-6-button": "Voir Projet",
   "contact-title": "Contact",
   "contact-text-email": "Vous pouvez me contacter par email :",
   "contact-email": "valentinojaramillo77@gmail.com",
